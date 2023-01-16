@@ -1,0 +1,1150 @@
+2022-10-15 20:35:30,764 INFO Set uid to user 0 succeeded
+2022-10-15 20:35:30,768 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:35:30,768 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:35:30,769 INFO supervisord started with pid 1
+2022-10-15 20:35:31,772 INFO spawned: 'processes' with pid 7
+2022-10-15 20:35:31,774 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:35:31,779 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:35:31,779 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:35:31,990 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:35:32,001 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:35:32,001 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:35:32,002 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:35:32,005 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+
+2022-10-15 20:35:32,005 DEBG 'auth-horizon_00' stdout output:
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:35:32,005 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140212292003392 for <Subprocess at 140212292003296 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:35:32,005 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140212291613312 for <Subprocess at 140212292003296 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:35:33,007 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:35:33,007 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:35:33,007 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:35:33,008 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:35:34,009 DEBG event 0 sent to listener processes
+2022-10-15 20:35:34,012 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:35:34,013 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 140212291908128 for <Subprocess at 140212291910000 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:35:34,013 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140212291612736 for <Subprocess at 140212291910000 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:35:34,013 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:35:34,014 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:35:34,014 WARN received SIGQUIT indicating exit request
+2022-10-15 20:35:34,014 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:35:34,015 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:35:34,015 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:35:34,215 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:35:34,225 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:35:34,225 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:35:34,225 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:35:34,228 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+
+2022-10-15 20:35:34,228 DEBG 'auth-horizon_00' stdout output:
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:35:34,228 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140212291613696 for <Subprocess at 140212292003296 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:35:34,228 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140212291613312 for <Subprocess at 140212292003296 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:35:35,231 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:35:35,231 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:35:36,315 INFO Set uid to user 0 succeeded
+2022-10-15 20:35:36,319 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:35:36,319 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:35:36,320 INFO supervisord started with pid 1
+2022-10-15 20:35:37,323 INFO spawned: 'processes' with pid 7
+2022-10-15 20:35:37,325 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:35:37,330 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:35:37,330 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:35:37,540 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:35:37,552 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:35:37,552 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:35:37,553 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:35:37,556 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:35:37,556 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139886823822816 for <Subprocess at 139886823822720 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:35:37,556 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139886823452928 for <Subprocess at 139886823822720 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:35:38,558 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:35:38,558 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:35:38,559 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:35:38,559 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:35:39,561 DEBG event 0 sent to listener processes
+2022-10-15 20:35:39,563 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:35:39,564 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139886823727552 for <Subprocess at 139886823729424 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:35:39,564 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139886823452976 for <Subprocess at 139886823729424 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:35:39,565 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:35:39,565 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:35:39,565 WARN received SIGQUIT indicating exit request
+2022-10-15 20:35:39,565 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:35:39,566 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:35:39,566 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:35:39,780 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:35:39,791 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:35:39,791 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:35:39,792 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:35:39,795 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:35:39,795 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139886823453600 for <Subprocess at 139886823822720 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:35:39,795 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139886823452928 for <Subprocess at 139886823822720 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:35:40,796 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:35:40,797 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:35:41,817 INFO Set uid to user 0 succeeded
+2022-10-15 20:35:41,822 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:35:41,822 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:35:41,822 INFO supervisord started with pid 1
+2022-10-15 20:35:42,825 INFO spawned: 'processes' with pid 7
+2022-10-15 20:35:42,827 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:35:42,828 WARN received SIGQUIT indicating exit request
+2022-10-15 20:35:42,828 DEBG killing auth-horizon_00 (pid 8) with signal SIGTERM
+2022-10-15 20:35:42,828 INFO waiting for processes, auth-horizon_00 to die
+2022-10-15 20:35:42,831 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:35:42,831 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:35:43,046 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:35:43,058 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:35:43,058 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:35:43,058 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:35:43,062 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+
+2022-10-15 20:35:43,062 DEBG 'auth-horizon_00' stdout output:
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:35:43,062 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139659853768256 for <Subprocess at 139659853768160 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:35:43,062 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139659853378176 for <Subprocess at 139659853768160 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:35:44,064 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:35:44,064 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:35:44,065 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:35:44,065 DEBG killing processes (pid 7) with signal SIGTERM
+2022-10-15 20:35:44,066 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139659853677088 for <Subprocess at 139659853678960 with name processes in state STOPPING> (stdout)>
+2022-10-15 20:35:44,066 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139659853377600 for <Subprocess at 139659853678960 with name processes in state STOPPING> (stderr)>
+2022-10-15 20:35:44,066 INFO stopped: processes (terminated by SIGTERM)
+2022-10-15 20:35:44,066 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:26,967 INFO Set uid to user 0 succeeded
+2022-10-15 20:36:26,971 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:36:26,971 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:36:26,971 INFO supervisord started with pid 1
+2022-10-15 20:36:27,974 INFO spawned: 'processes' with pid 7
+2022-10-15 20:36:27,977 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:36:27,982 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:36:27,982 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:36:28,196 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:28,206 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:28,206 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:28,207 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:28,209 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:28,210 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140547383108224 for <Subprocess at 140547383498208 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:36:28,210 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140547383498304 for <Subprocess at 140547383498208 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:36:29,212 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:29,212 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:29,212 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:36:29,213 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:30,214 DEBG event 0 sent to listener processes
+2022-10-15 20:36:30,216 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:36:30,217 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 140547383407136 for <Subprocess at 140547383409008 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:36:30,217 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140547383107648 for <Subprocess at 140547383409008 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:36:30,218 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:36:30,218 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:36:30,218 WARN received SIGQUIT indicating exit request
+2022-10-15 20:36:30,219 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:36:30,219 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:36:30,219 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:30,441 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:30,453 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:30,453 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:30,453 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:30,456 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+
+2022-10-15 20:36:30,457 DEBG 'auth-horizon_00' stdout output:
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:30,457 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140547383108608 for <Subprocess at 140547383498208 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:36:30,457 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140547383108224 for <Subprocess at 140547383498208 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:36:31,459 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:36:31,459 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:32,470 INFO Set uid to user 0 succeeded
+2022-10-15 20:36:32,474 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:36:32,474 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:36:32,474 INFO supervisord started with pid 1
+2022-10-15 20:36:33,477 INFO spawned: 'processes' with pid 7
+2022-10-15 20:36:33,478 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:36:33,483 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:36:33,483 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:36:33,684 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:33,695 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:33,696 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+2022-10-15 20:36:33,696 DEBG 'auth-horizon_00' stdout output:
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:33,696 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:33,699 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:33,700 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139978133947968 for <Subprocess at 139978133947872 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:36:33,700 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139978133557888 for <Subprocess at 139978133947872 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:36:34,701 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:34,702 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:34,702 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:36:34,702 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:35,703 DEBG event 0 sent to listener processes
+2022-10-15 20:36:35,706 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:36:35,707 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139978133852704 for <Subprocess at 139978133854576 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:36:35,707 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139978133557312 for <Subprocess at 139978133854576 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:36:35,707 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:36:35,708 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:36:35,708 WARN received SIGQUIT indicating exit request
+2022-10-15 20:36:35,708 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:36:35,709 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:36:35,709 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:35,890 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:35,900 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:35,901 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:35,901 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:35,904 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+
+2022-10-15 20:36:35,904 DEBG 'auth-horizon_00' stdout output:
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:35,904 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139978133558272 for <Subprocess at 139978133947872 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:36:35,904 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139978133557888 for <Subprocess at 139978133947872 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:36:36,906 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:36:36,906 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:37,887 INFO Set uid to user 0 succeeded
+2022-10-15 20:36:37,891 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:36:37,891 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:36:37,891 INFO supervisord started with pid 1
+2022-10-15 20:36:38,895 INFO spawned: 'processes' with pid 7
+2022-10-15 20:36:38,897 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:36:38,902 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:36:38,902 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:36:39,120 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:39,134 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:39,134 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+2022-10-15 20:36:39,134 DEBG 'auth-horizon_00' stdout output:
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:39,140 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:39,140 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139651303420544 for <Subprocess at 139651303810528 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:36:39,140 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139651303810624 for <Subprocess at 139651303810528 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:36:40,142 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:40,142 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:40,143 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:36:40,143 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:41,145 DEBG event 0 sent to listener processes
+2022-10-15 20:36:41,147 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:36:41,148 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139651303719456 for <Subprocess at 139651303721328 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:36:41,148 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139651303419968 for <Subprocess at 139651303721328 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:36:41,149 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:36:41,149 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:36:41,149 WARN received SIGQUIT indicating exit request
+2022-10-15 20:36:41,150 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:36:41,150 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:36:41,150 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:41,366 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:41,377 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:41,378 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:41,378 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:41,381 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:41,381 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139651303420928 for <Subprocess at 139651303810528 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:36:41,381 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139651303420544 for <Subprocess at 139651303810528 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:36:42,384 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:36:42,384 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:43,572 INFO Set uid to user 0 succeeded
+2022-10-15 20:36:43,577 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:36:43,577 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:36:43,577 INFO supervisord started with pid 1
+2022-10-15 20:36:44,580 INFO spawned: 'processes' with pid 7
+2022-10-15 20:36:44,582 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:36:44,588 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:36:44,588 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:36:44,787 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:44,797 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:44,797 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+
+2022-10-15 20:36:44,797 DEBG 'auth-horizon_00' stdout output:
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:44,798 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:44,800 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:44,801 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139828380935744 for <Subprocess at 139828380935648 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:36:44,801 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139828380545664 for <Subprocess at 139828380935648 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:36:45,802 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:45,803 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:45,803 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:36:45,803 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:46,805 DEBG event 0 sent to listener processes
+2022-10-15 20:36:46,807 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:36:46,808 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139828380840480 for <Subprocess at 139828380842352 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:36:46,808 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139828380545088 for <Subprocess at 139828380842352 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:36:46,809 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:36:46,809 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:36:46,809 WARN received SIGQUIT indicating exit request
+2022-10-15 20:36:46,810 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:36:46,810 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:36:46,810 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:47,028 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:47,038 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:47,039 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:47,039 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:47,042 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:47,042 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139828380546048 for <Subprocess at 139828380935648 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:36:47,042 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139828380545664 for <Subprocess at 139828380935648 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:36:48,044 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:36:48,044 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:49,571 INFO Set uid to user 0 succeeded
+2022-10-15 20:36:49,575 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:36:49,575 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:36:49,576 INFO supervisord started with pid 1
+2022-10-15 20:36:50,579 INFO spawned: 'processes' with pid 7
+2022-10-15 20:36:50,581 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:36:50,586 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:36:50,586 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:36:50,792 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:50,802 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:50,803 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:50,803 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:50,806 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+
+2022-10-15 20:36:50,806 DEBG 'auth-horizon_00' stdout output:
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:50,806 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140427671623232 for <Subprocess at 140427671623136 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:36:50,806 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140427671233152 for <Subprocess at 140427671623136 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:36:51,809 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:51,809 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:51,809 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:36:51,810 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:52,811 DEBG event 0 sent to listener processes
+2022-10-15 20:36:52,814 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:36:52,815 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 140427671527968 for <Subprocess at 140427671529840 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:36:52,815 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140427671232576 for <Subprocess at 140427671529840 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:36:52,815 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:36:52,815 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:36:52,816 WARN received SIGQUIT indicating exit request
+2022-10-15 20:36:52,816 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:36:52,816 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:36:52,817 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:53,020 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:53,030 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:53,031 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:53,031 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:53,033 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+
+2022-10-15 20:36:53,034 DEBG 'auth-horizon_00' stdout output:
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:53,034 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140427671233536 for <Subprocess at 140427671623136 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:36:53,034 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140427671233152 for <Subprocess at 140427671623136 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:36:54,036 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:36:54,036 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:56,448 INFO Set uid to user 0 succeeded
+2022-10-15 20:36:56,451 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:36:56,451 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:36:56,451 INFO supervisord started with pid 1
+2022-10-15 20:36:57,455 INFO spawned: 'processes' with pid 7
+2022-10-15 20:36:57,457 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:36:57,462 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:36:57,463 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:36:57,670 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:57,681 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:57,681 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+2022-10-15 20:36:57,681 DEBG 'auth-horizon_00' stdout output:
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:57,681 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:57,684 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+
+2022-10-15 20:36:57,685 DEBG 'auth-horizon_00' stdout output:
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:57,685 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139856115582480 for <Subprocess at 139856115582384 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:36:57,685 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139856115212592 for <Subprocess at 139856115582384 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:36:58,687 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:58,687 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:36:58,687 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:36:58,688 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:59,689 DEBG event 0 sent to listener processes
+2022-10-15 20:36:59,692 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:36:59,693 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139856115491312 for <Subprocess at 139856115493184 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:36:59,693 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139856115212640 for <Subprocess at 139856115493184 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:36:59,694 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:36:59,694 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:36:59,694 WARN received SIGQUIT indicating exit request
+2022-10-15 20:36:59,695 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:36:59,695 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:36:59,695 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:36:59,906 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:36:59,917 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:36:59,918 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:36:59,918 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:36:59,921 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:36:59,922 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139856115213264 for <Subprocess at 139856115582384 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:36:59,922 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139856115212592 for <Subprocess at 139856115582384 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:37:00,924 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:37:00,924 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:04,925 INFO Set uid to user 0 succeeded
+2022-10-15 20:37:04,929 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:37:04,930 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:37:04,930 INFO supervisord started with pid 1
+2022-10-15 20:37:05,933 INFO spawned: 'processes' with pid 7
+2022-10-15 20:37:05,935 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:37:05,940 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:37:05,940 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:37:06,149 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:37:06,161 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:37:06,161 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:37:06,161 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:37:06,165 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+
+2022-10-15 20:37:06,165 DEBG 'auth-horizon_00' stdout output:
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:37:06,165 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139770528704064 for <Subprocess at 139770528703968 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:37:06,165 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139770528313984 for <Subprocess at 139770528703968 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:37:07,167 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:37:07,167 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:37:07,168 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:37:07,168 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:08,170 DEBG event 0 sent to listener processes
+2022-10-15 20:37:08,172 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:37:08,173 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139770528612896 for <Subprocess at 139770528614768 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:37:08,173 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139770528313408 for <Subprocess at 139770528614768 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:37:08,174 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:37:08,174 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:37:08,174 WARN received SIGQUIT indicating exit request
+2022-10-15 20:37:08,175 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:37:08,175 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:37:08,175 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:08,389 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:37:08,399 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:37:08,400 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:37:08,400 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:37:08,403 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:37:08,403 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139770528314368 for <Subprocess at 139770528703968 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:37:08,403 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139770528313984 for <Subprocess at 139770528703968 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:37:09,405 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:37:09,406 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:16,748 INFO Set uid to user 0 succeeded
+2022-10-15 20:37:16,752 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:37:16,752 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:37:16,752 INFO supervisord started with pid 1
+2022-10-15 20:37:17,755 INFO spawned: 'processes' with pid 7
+2022-10-15 20:37:17,758 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:37:17,763 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:37:17,763 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:37:17,972 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:37:17,984 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:37:17,984 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+
+2022-10-15 20:37:17,984 DEBG 'auth-horizon_00' stdout output:
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:37:17,985 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:37:17,988 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:37:17,988 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140335816357440 for <Subprocess at 140335816357344 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:37:17,988 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140335815971456 for <Subprocess at 140335816357344 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:37:18,990 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:37:18,990 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:37:18,990 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:37:18,991 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:19,992 DEBG event 0 sent to listener processes
+2022-10-15 20:37:19,994 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:37:19,995 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 140335816266272 for <Subprocess at 140335816268144 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:37:19,995 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140335815970880 for <Subprocess at 140335816268144 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:37:19,995 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:37:19,995 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:37:19,995 WARN received SIGQUIT indicating exit request
+2022-10-15 20:37:19,996 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:37:19,996 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:37:19,996 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:20,203 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:37:20,214 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:37:20,214 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+2022-10-15 20:37:20,214 DEBG 'auth-horizon_00' stdout output:
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:37:20,215 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:37:20,218 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:37:20,218 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140335815971840 for <Subprocess at 140335816357344 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:37:20,218 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140335815971456 for <Subprocess at 140335816357344 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:37:21,220 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:37:21,220 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:34,745 INFO Set uid to user 0 succeeded
+2022-10-15 20:37:34,749 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:37:34,749 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:37:34,750 INFO supervisord started with pid 1
+2022-10-15 20:37:35,753 INFO spawned: 'processes' with pid 7
+2022-10-15 20:37:35,755 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:37:35,760 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:37:35,760 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:37:35,962 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:37:35,973 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:37:35,973 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:37:35,973 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:37:35,976 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+
+2022-10-15 20:37:35,976 DEBG 'auth-horizon_00' stdout output:
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:37:35,977 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139672506775104 for <Subprocess at 139672506775008 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:37:35,977 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139672506385024 for <Subprocess at 139672506775008 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:37:36,979 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:37:36,979 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:37:36,979 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:37:36,979 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:37,980 DEBG event 0 sent to listener processes
+2022-10-15 20:37:37,982 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:37:37,982 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139672506683936 for <Subprocess at 139672506685808 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:37:37,983 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139672506384448 for <Subprocess at 139672506685808 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:37:37,983 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:37:37,983 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:37:37,983 WARN received SIGQUIT indicating exit request
+2022-10-15 20:37:37,983 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:37:37,983 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:37:37,984 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:37:38,185 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:37:38,195 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:37:38,195 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:37:38,196 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:37:38,198 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:37:38,199 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139672506385408 for <Subprocess at 139672506775008 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:37:38,199 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139672506385024 for <Subprocess at 139672506775008 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:37:39,201 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:37:39,201 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:38:05,580 INFO Set uid to user 0 succeeded
+2022-10-15 20:38:05,585 INFO RPC interface 'supervisor' initialized
+2022-10-15 20:38:05,585 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-10-15 20:38:05,585 INFO supervisord started with pid 1
+2022-10-15 20:38:06,588 INFO spawned: 'processes' with pid 7
+2022-10-15 20:38:06,590 INFO spawned: 'auth-horizon_00' with pid 8
+2022-10-15 20:38:06,596 DEBG 'processes' stdout output:
+b'READY\n'
+2022-10-15 20:38:06,598 DEBG processes: ACKNOWLEDGED -> READY
+2022-10-15 20:38:06,804 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:38:06,812 DEBG 'auth-horizon_00' stdout output:
+
+   Error 
+
+
+2022-10-15 20:38:06,813 DEBG 'auth-horizon_00' stdout output:
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:38:06,813 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:38:06,815 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:38:06,816 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139682531989056 for <Subprocess at 139682531988960 with name auth-horizon_00 in state STARTING> (stdout)>
+2022-10-15 20:38:06,816 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139682531598976 for <Subprocess at 139682531988960 with name auth-horizon_00 in state STARTING> (stderr)>
+2022-10-15 20:38:07,817 INFO success: processes entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:38:07,818 INFO success: auth-horizon_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-10-15 20:38:07,818 INFO exited: auth-horizon_00 (exit status 1; not expected)
+2022-10-15 20:38:07,818 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:38:08,820 DEBG event 0 sent to listener processes
+2022-10-15 20:38:08,822 INFO spawned: 'auth-horizon_00' with pid 15
+2022-10-15 20:38:08,823 DEBG fd 7 closed, stopped monitoring <PEventListenerDispatcher at 139682531893792 for <Subprocess at 139682531895664 with name processes in state RUNNING> (stdout)>
+2022-10-15 20:38:08,823 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139682531598400 for <Subprocess at 139682531895664 with name processes in state RUNNING> (stderr)>
+2022-10-15 20:38:08,823 INFO exited: processes (exit status 0; expected)
+2022-10-15 20:38:08,824 DEBG rebuffering event 0 for pool processes (buf size=1, max=10)
+2022-10-15 20:38:08,824 WARN received SIGQUIT indicating exit request
+2022-10-15 20:38:08,824 DEBG killing auth-horizon_00 (pid 15) with signal SIGTERM
+2022-10-15 20:38:08,825 INFO waiting for auth-horizon_00 to die
+2022-10-15 20:38:08,825 DEBG received SIGCHLD indicating a child quit
+2022-10-15 20:38:09,047 DEBG 'auth-horizon_00' stdout output:
+Horizon started successfully.
+
+2022-10-15 20:38:09,059 DEBG 'auth-horizon_00' stdout output:
+
+
+2022-10-15 20:38:09,059 DEBG 'auth-horizon_00' stdout output:
+   Error 
+
+  Call to undefined function Laravel\Horizon\Console\pcntl_async_signals()
+
+  at vendor/laravel/horizon/src/Console/HorizonCommand.php:48
+
+2022-10-15 20:38:09,059 DEBG 'auth-horizon_00' stdout output:
+     44▕         );
+     45▕ 
+     46▕         $this->info('Horizon started successfully.');
+     47▕ 
+  ➜  48▕         pcntl_async_signals(true);
+     49▕ 
+     50▕         pcntl_signal(SIGINT, function () use ($master) {
+     51▕             $this->line('Shutting down...');
+     52▕
+
+2022-10-15 20:38:09,062 DEBG 'auth-horizon_00' stdout output:
+
+      [2m+13 vendor frames [22m
+  14  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+2022-10-15 20:38:09,063 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139682531599360 for <Subprocess at 139682531988960 with name auth-horizon_00 in state STOPPING> (stdout)>
+2022-10-15 20:38:09,063 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139682531598976 for <Subprocess at 139682531988960 with name auth-horizon_00 in state STOPPING> (stderr)>
+2022-10-15 20:38:10,065 INFO stopped: auth-horizon_00 (exit status 1)
+2022-10-15 20:38:10,066 DEBG received SIGCHLD indicating a child quit
